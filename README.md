@@ -12,6 +12,7 @@ make sure to start your application using this port.
 <br/><br/>
 
 # Deploy a Jar File
+Ref: https://devcenter.heroku.com/articles/deploying-executable-jar-files
 ```
 heroku login
 heroku stack:set heroku-20 -a [APP_NAME]
