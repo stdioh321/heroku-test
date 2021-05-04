@@ -116,3 +116,15 @@ git push heroku main
 heroku open -a [APP_NAME]
 ```
 
+Using the heroku.yml your docker container will be created and executed at the heroku's server, it should run faster than using only using the Dockerfile that create it locally then tries to deploy.
+
+![Deploy with heroku.yml](./docs/screenshots/screenshot04.png)
+
+
+#References
+
+* [Heroku](https://www.heroku.com)
+* [Heroku - Deploy with JAR](https://devcenter.heroku.com/articles/deploying-executable-jar-files)
+* [Heroku - Deploy with Procfile](https://devcenter.heroku.com/articles/procfile)
+* [Heroku - Deploy with Dockerfile](https://devcenter.heroku.com/articles/container-registry-and-runtime)
+* [Heroku - Deploy with heroku.yml](https://devcenter.heroku.com/articles/build-docker-images-heroku-yml)

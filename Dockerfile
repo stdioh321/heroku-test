@@ -10,7 +10,6 @@ RUN service cron start
 RUN systemctl enable cron
 USER app
 ENV PORT=8080
-EXPOSE 8080
 EXPOSE $PORT
 
 CMD /bin/bash ./startup.sh
