@@ -26,6 +26,10 @@ Ref: https://devcenter.heroku.com/articles/deploying-executable-jar-files
 ```
 heroku login
 heroku stack:set heroku-20 -a [APP_NAME]
+
+# Build your application
+gradle clean build
+
 heroku deploy:jar build/libs/app.jar -a [APP_NAME]
 
 heroku open -a [APP_NAME]
@@ -108,6 +112,10 @@ Read the heroku.yml at the root of the repository to get an example
 ```
 cd [PATH_TO_PROJECT]
 heroku login
+
+# Should be done only once
+# Adding the a new remote (heroku) to the heroku's git server  
+heroku git:remote -a [APP_NAME]
 
 git add -A
 git commit -m"heroku.yml"
