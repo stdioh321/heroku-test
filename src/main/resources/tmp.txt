@@ -1,0 +1,2 @@
+Text ins tmp.txt at the folder resources.
+Second line.
