@@ -3,7 +3,7 @@ Testing Heroku Deploy methods
 
 For this test we will be using an application written in Java 11 with the Spring Boot framework and using gradle 7.
 
-#Demo
+# Demo
 ###**https://tmptmpjava.herokuapp.com**
 
 # ###IMPORTANT###
@@ -12,9 +12,13 @@ make sure to start your application using this port.
 <br/><br/>
 
 
-#First Steps
+# First Steps
 * Create an account at the **https://heroku.com**
 * Create an application to be used in ours tests
+    ```
+    heroku login
+    heroku apps:create [APP_NAME]
+    ```
 
 
 # Deploy a Jar File
@@ -37,7 +41,7 @@ Example how heroku runs your application: **java $JAVA_OPTS -jar app.jar**
 
  
 
-#Deploy with Procfile
+# Deploy with Procfile
 Ref: https://devcenter.heroku.com/articles/procfile
 
 Specify the JRE version on the server: https://devcenter.heroku.com/articles/java-support#specifying-a-java-version
@@ -68,7 +72,7 @@ heroku open -a [APP_NAME]
 ![git push with Procfile](./docs/screenshots/screenshot02.png)
 
 
-#Deploy with Dockerfile
+# Deploy with Dockerfile
 Ref: https://devcenter.heroku.com/articles/container-registry-and-runtime
 
 Create your Dockerfile in the root of the project with the steps to run the application using the variable $PORT
@@ -93,7 +97,7 @@ heroku open -a [APP_NAME]
 
 
 
-#Deploy with heroku.yml and Dockerfile
+# Deploy with heroku.yml and Dockerfile
 Ref: https://devcenter.heroku.com/articles/build-docker-images-heroku-yml
 
 Create your Dockerfile in the root of the project with the steps to run the application using the variable $PORT,
@@ -121,7 +125,7 @@ Using the heroku.yml your docker container will be created and executed at the h
 ![Deploy with heroku.yml](./docs/screenshots/screenshot04.png)
 
 
-#References
+# References
 
 * [Heroku](https://www.heroku.com)
 * [Heroku - Deploy with JAR](https://devcenter.heroku.com/articles/deploying-executable-jar-files)
